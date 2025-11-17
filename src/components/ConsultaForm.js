@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+import BackHomeButton from "../components/BackHomeButton";
 
 export default function ConsultaForm() {
   const navigate = useNavigate();
@@ -67,6 +68,10 @@ export default function ConsultaForm() {
           Cancelar
         </button>
       </form>
+
+      <div className="container mt-4">
+        <BackHomeButton />
+        </div>
     </div>
   );
 }

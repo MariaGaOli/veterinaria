@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+import BackHomeButton from "../components/BackHomeButton";
 
 export default function ConsultaList() {
   const navigate = useNavigate();
@@ -58,6 +59,10 @@ export default function ConsultaList() {
           </tbody>
         </table>
       )}
+
+        <div className="container mt-4">
+        <BackHomeButton />
+        </div>
     </div>
   );
 }
